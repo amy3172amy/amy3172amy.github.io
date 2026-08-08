@@ -1,0 +1,242 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Members | Sustainable Water Technology Lab</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background: #ffffff;
+        }
+
+        header {
+            background: #12372A;
+            color: white;
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        section h2 {
+            font-size: 32px;
+            color: #12372A;
+        }
+
+        .member-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .member-card {
+            text-align: center;
+            background: #F7FAF8;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #D9E8E1;
+        }
+
+        .member-card img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .member-card h3 {
+            color: #12372A;
+            margin-bottom: 8px;
+        }
+
+        .member-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        footer {
+            background: #12372A;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        @media (max-width: 768px) {
+
+            header {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .member-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>
+            Sustainable Water Technology Lab
+        </h1>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="index.html#research">Research</a>
+
+            <a href="members.html">Members</a>
+
+            <a href="#publications">Publications</a>
+
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Members -->
+
+    <section>
+
+        <h2>
+            Members
+        </h2>
+
+        <div class="member-grid">
+
+
+            <!-- Member 1 -->
+
+            <div class="member-card">
+
+                <img src="images/professor.jpg"
+                     alt="Professor">
+
+                <h3>
+                    Prof. XXX
+                </h3>
+
+                <p>
+                    Principal Investigator
+                </p>
+
+                <p>
+                    Department of XXX<br>
+                    National Taiwan University
+                </p>
+
+            </div>
+
+
+            <!-- Member 2 -->
+
+            <div class="member-card">
+
+                <img src="images/student1.jpg"
+                     alt="Graduate Student">
+
+                <h3>
+                    XXX XXX
+                </h3>
+
+                <p>
+                    Ph.D. Student
+                </p>
+
+                <p>
+                    Research interests:<br>
+                    Electrochemical Water Treatment
+                </p>
+
+            </div>
+
+
+            <!-- Member 3 -->
+
+            <div class="member-card">
+
+                <img src="images/student2.jpg"
+                     alt="Graduate Student">
+
+                <h3>
+                    XXX XXX
+                </h3>
+
+                <p>
+                    Master's Student
+                </p>
+
+                <p>
+                    Research interests:<br>
+                    Water Resource Management
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            Sustainable Water Technology Lab
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
+```
