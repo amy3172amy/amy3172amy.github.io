@@ -12,7 +12,7 @@
             color: #333;
             background: #ffffff;
         }
-
+/* ===== Header ===== */
         header {
             background: #12372A;
             color: white;
@@ -32,7 +32,7 @@
             text-decoration: none;
             margin-left: 25px;
         }
-
+/* ===== Hero ===== */
         .hero {
             padding: 120px 8%;
             background: #E8F3EE;
@@ -48,7 +48,7 @@
             max-width: 650px;
             line-height: 1.6;
         }
-
+/* ===== General Section ===== */
         section {
             padding: 70px 8%;
         }
@@ -58,6 +58,40 @@
             color: #12372A;
         }
 
+
+/* ===== Research Cards ===== */ 
+        .research-grid { 
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 30px; 
+            margin-top: 40px; 
+        } 
+        .research-card { 
+            background: white;
+            padding: 35px; 
+            border-radius: 12px; 
+            border: 1px solid #D9E8E1; 
+            box-shadow: 0 5px 15px rgba(18, 55, 42, 0.08); 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        } 
+        .research-card:hover { 
+            transform: translateY(-8px); 
+            box-shadow: 0 10px 25px rgba(18, 55, 42, 0.15); 
+        } 
+        .research-card h3 { 
+            color: #12372A; 
+            font-size: 24px; 
+            margin-bottom: 15px; 
+        } 
+        .research-card p { 
+            line-height: 1.7; color: #555; 
+        } 
+        .research-card ul { 
+            padding-left: 20px; 
+            line-height: 1.8; 
+            color: #555; 
+        }
+    /* ===== Footer ===== */
         footer {
             background: #12372A;
             color: white;
@@ -68,7 +102,7 @@
 </head>
 
 <body>
-
+<!-- ===== Header ===== -->
 <header>
     <h1>WE3LL LAB</h1>
 
@@ -81,6 +115,7 @@
     </nav>
 </header>
 
+    <!-- ===== Hero Section ===== -->
 <section class="hero">
     <h2>Water, Energy and Environmnet Engineering <br> Lin's Laboratory </h2>
 
@@ -98,13 +133,50 @@
         research environment, and academic vision.
     </p>
 </section>
-
-<section id="research">
-    <h2>Research</h2>
-    <p>
-        Our research focuses on developing innovative solutions
-        and exploring important scientific questions.
-    </p>
+<!-- ===== Research Section ===== -->
+<section id="research"> 
+    <h2> 
+        Research 
+    </h2> 
+    <div class="research-grid"> 
+        <!-- Research 1 --> 
+        <div class="research-card"> 
+            <h3> 
+                Porous Charged Materials 
+            </h3> 
+            <p> Development and application of charged porous
+                materials for ion transport, selective separation, 
+                and electrochemical processes. 
+            </p> 
+        </div> 
+        <!-- Research 2 --> 
+        <div class="research-card"> 
+            <h3> 
+                Electrokinetic Processes 
+            </h3> 
+            <p> 
+                Investigation of electrokinetic phenomena and 
+                advanced electrochemical processes for water 
+                treatment, resource recovery, and sustainable 
+                water technologies. 
+            </p> 
+        </div> 
+        <!-- Research 3 --> 
+        <div class="research-card"> 
+            <h3> 
+                Water Management 
+            </h3> 
+            <p> 
+                Innovative approaches for sustainable water 
+                management. 
+            </p> 
+            <ul> 
+                <li>Emerging Contaminants</li> 
+                <li>Surface Water</li> 
+                <li>Water–Energy Nexus</li> 
+            </ul> 
+        </div> 
+    </div> 
 </section>
 
 <section id="members">
@@ -133,7 +205,7 @@
         Email: your-email@example.com
     </p>
 </section>
-
+<!-- ===== Footer ===== -->
 <footer>
     © 2026 WELL LAB
 </footer>
