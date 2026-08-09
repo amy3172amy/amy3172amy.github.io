@@ -1,4 +1,3 @@
-
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -9,9 +8,14 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Members | We3ll Lab</title>
+    <title>Members | We3LL Lab</title>
+
 
     <style>
+
+        /* =========================
+           BASIC
+        ========================= */
 
         body {
             margin: 0;
@@ -21,21 +25,30 @@
         }
 
 
-        /* ===== Header ===== */
+        /* =========================
+           HEADER
+        ========================= */
 
         header {
             background: #12372A;
             color: white;
             padding: 25px 8%;
+
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
+
         header h1 {
             margin: 0;
             font-size: 28px;
         }
+
+
+        /* =========================
+           NAVIGATION
+        ========================= */
 
         nav a {
             color: white;
@@ -44,50 +57,72 @@
         }
 
 
-        /* ===== Members Section ===== */
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* =========================
+           MEMBERS SECTION
+        ========================= */
 
         .members-section {
             padding: 80px 8%;
         }
 
-        .members-section h2 {
-            font-size: 36px;
+
+        .members-section > h2 {
+            font-size: 38px;
             color: #12372A;
             text-align: center;
             margin-bottom: 50px;
         }
 
 
-        /* ===== Professor ===== */
+        /* =========================
+           PROFESSOR CARD
+        ========================= */
 
         .professor-card {
             max-width: 850px;
             margin: 0 auto;
+
             display: flex;
             align-items: center;
+
             gap: 50px;
+
             padding: 45px;
+
             background: #E8F3EE;
+
             border-radius: 15px;
         }
+
 
         .professor-photo {
             width: 200px;
             height: 200px;
+
             border-radius: 50%;
+
             object-fit: cover;
         }
+
 
         .professor-info h3 {
             font-size: 30px;
             color: #12372A;
+
             margin: 0 0 10px 0;
         }
+
 
         .professor-info .title {
             font-size: 20px;
             margin-bottom: 15px;
         }
+
 
         .professor-info p {
             line-height: 1.7;
@@ -95,34 +130,142 @@
         }
 
 
-        /* ===== Footer ===== */
+        /* =========================
+           RESEARCH INTERESTS
+        ========================= */
+
+        .research-interests {
+            max-width: 1100px;
+
+            margin: 80px auto 0;
+        }
+
+
+        .research-interests h2 {
+            text-align: center;
+
+            color: #12372A;
+
+            font-size: 32px;
+
+            margin-bottom: 35px;
+        }
+
+
+        /* =========================
+           RESEARCH CARDS
+        ========================= */
+
+        .interest-grid {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+
+        .interest-card {
+            text-decoration: none;
+
+            background: white;
+
+            padding: 30px;
+
+            border-radius: 12px;
+
+            border: 1px solid #D9E8E1;
+
+            box-shadow:
+                0 5px 15px rgba(18, 55, 42, 0.08);
+
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+
+
+        .interest-card:hover {
+            transform: translateY(-6px);
+
+            box-shadow:
+                0 10px 25px rgba(18, 55, 42, 0.15);
+        }
+
+
+        .interest-card h3 {
+            color: #12372A;
+
+            font-size: 21px;
+
+            margin-bottom: 12px;
+        }
+
+
+        .interest-card p {
+            color: #555;
+
+            line-height: 1.6;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
 
         footer {
             background: #12372A;
+
             color: white;
+
             text-align: center;
+
             padding: 30px;
         }
 
 
-        /* ===== Mobile ===== */
+        /* =========================
+           MOBILE
+        ========================= */
 
         @media (max-width: 768px) {
 
             header {
                 flex-direction: column;
+
                 gap: 20px;
+
                 text-align: center;
             }
+
 
             nav a {
                 margin: 0 8px;
             }
 
+
+            .members-section {
+                padding: 60px 6%;
+            }
+
+
             .professor-card {
                 flex-direction: column;
+
                 text-align: center;
+
                 padding: 30px;
+            }
+
+
+            .professor-photo {
+                width: 170px;
+                height: 170px;
+            }
+
+
+            .interest-grid {
+                grid-template-columns: 1fr;
             }
 
         }
@@ -135,43 +278,68 @@
 <body>
 
 
-    <!-- ===== Header ===== -->
+    <!-- =========================
+         HEADER
+    ========================= -->
 
     <header>
 
         <h1>
-            We3ll Lab
+            Sustainable Water Technology Lab
         </h1>
+
 
         <nav>
 
-            <a href="index.html">Home</a>
+            <a href="index.html">
+                Home
+            </a>
 
-            <a href="index.html#research">Research</a>
 
-            <a href="members.html">Members</a>
+            <a href="index.html#research">
+                Research
+            </a>
 
-            <a href="#publications">Publications</a>
 
-            <a href="#contact">Contact</a>
+            <a href="members.html">
+                Members
+            </a>
+
+
+            <a href="#publications">
+                Publications
+            </a>
+
+
+            <a href="#contact">
+                Contact
+            </a>
 
         </nav>
 
     </header>
 
 
-    <!-- ===== Members ===== -->
+
+    <!-- =========================
+         MEMBERS
+    ========================= -->
 
     <section class="members-section">
+
 
         <h2>
             Members
         </h2>
 
 
-        <!-- Professor -->
+
+        <!-- =========================
+             PROFESSOR
+        ========================= -->
 
         <div class="professor-card">
+
 
             <div>
 
@@ -184,30 +352,147 @@
             </div>
 
 
+
             <div class="professor-info">
 
                 <h3>
                     Yu-I (Yui) Lin
                 </h3>
 
+
                 <div class="title">
                     Assistant Professor
                 </div>
 
+
                 <p>
-                    Department of Environmental Engineering and Science
+
+                    Department of Environmental
+                    Engineering and Science
                     <br>
+
                     Feng Chia University
+
                 </p>
 
             </div>
 
+
         </div>
+
+
+
+        <!-- =========================
+             RESEARCH INTERESTS
+        ========================= -->
+
+        <div class="research-interests">
+
+
+            <h2>
+                Research Interests
+            </h2>
+
+
+
+            <div class="interest-grid">
+
+
+                <!-- =====================
+                     RESEARCH 1
+                ====================== -->
+
+                <a
+                    href="index.html#porous-materials"
+                    class="interest-card"
+                >
+
+                    <h3>
+                        Porous Charged Materials
+                    </h3>
+
+
+                    <p>
+
+                        Development and application of
+                        charged porous materials for ion
+                        transport, selective separation,
+                        and electrochemical processes.
+
+                    </p>
+
+                </a>
+
+
+
+                <!-- =====================
+                     RESEARCH 2
+                ====================== -->
+
+                <a
+                    href="index.html#electrokinetic-processes"
+                    class="interest-card"
+                >
+
+                    <h3>
+                        Electrokinetic Processes
+                    </h3>
+
+
+                    <p>
+
+                        Investigation of electrokinetic
+                        phenomena and advanced
+                        electrochemical processes for
+                        water treatment and resource
+                        recovery.
+
+                    </p>
+
+                </a>
+
+
+
+                <!-- =====================
+                     RESEARCH 3
+                ====================== -->
+
+                <a
+                    href="index.html#water-management"
+                    class="interest-card"
+                >
+
+                    <h3>
+                        Water Management
+                    </h3>
+
+
+                    <p>
+
+                        Innovative approaches for
+                        sustainable water management,
+                        including emerging contaminants,
+                        surface water, and the
+                        water–energy nexus.
+
+                    </p>
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
 
     </section>
 
 
-    <!-- ===== Footer ===== -->
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
 
     <footer>
 
