@@ -1,3 +1,4 @@
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -6,10 +7,9 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Members | Sustainable Water Technology Lab</title>
+    <title>Members | We3ll Lab</title>
 
     <style>
 
@@ -19,6 +19,9 @@
             color: #333;
             background: #ffffff;
         }
+
+
+        /* ===== Header ===== */
 
         header {
             background: #12372A;
@@ -40,47 +43,59 @@
             margin-left: 25px;
         }
 
-        section {
-            padding: 70px 8%;
+
+        /* ===== Members Section ===== */
+
+        .members-section {
+            padding: 80px 8%;
         }
 
-        section h2 {
-            font-size: 32px;
+        .members-section h2 {
+            font-size: 36px;
             color: #12372A;
-        }
-
-        .member-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .member-card {
             text-align: center;
-            background: #F7FAF8;
-            padding: 30px;
-            border-radius: 12px;
-            border: 1px solid #D9E8E1;
+            margin-bottom: 50px;
         }
 
-        .member-card img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
+
+        /* ===== Professor ===== */
+
+        .professor-card {
+            max-width: 850px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            padding: 45px;
+            background: #E8F3EE;
+            border-radius: 15px;
+        }
+
+        .professor-photo {
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
-            margin-bottom: 20px;
+            object-fit: cover;
         }
 
-        .member-card h3 {
+        .professor-info h3 {
+            font-size: 30px;
             color: #12372A;
-            margin-bottom: 8px;
+            margin: 0 0 10px 0;
         }
 
-        .member-card p {
-            color: #666;
-            line-height: 1.6;
+        .professor-info .title {
+            font-size: 20px;
+            margin-bottom: 15px;
         }
+
+        .professor-info p {
+            line-height: 1.7;
+            color: #555;
+        }
+
+
+        /* ===== Footer ===== */
 
         footer {
             background: #12372A;
@@ -88,6 +103,9 @@
             text-align: center;
             padding: 30px;
         }
+
+
+        /* ===== Mobile ===== */
 
         @media (max-width: 768px) {
 
@@ -101,8 +119,10 @@
                 margin: 0 8px;
             }
 
-            .member-grid {
-                grid-template-columns: 1fr;
+            .professor-card {
+                flex-direction: column;
+                text-align: center;
+                padding: 30px;
             }
 
         }
@@ -115,7 +135,7 @@
 <body>
 
 
-    <!-- Header -->
+    <!-- ===== Header ===== -->
 
     <header>
 
@@ -140,92 +160,54 @@
     </header>
 
 
-    <!-- Members -->
+    <!-- ===== Members ===== -->
 
-    <section>
+    <section class="members-section">
 
         <h2>
             Members
         </h2>
 
-        <div class="member-grid">
 
+        <!-- Professor -->
 
-            <!-- Member 1 -->
+        <div class="professor-card">
 
-            <div class="member-card">
+            <div>
 
-                <img src="images/professor.jpg"
-                     alt="Professor">
-
-                <h3>
-                    Prof. XXX
-                </h3>
-
-                <p>
-                    Principal Investigator
-                </p>
-
-                <p>
-                    Department of XXX<br>
-                    National Taiwan University
-                </p>
+                <img
+                    src="images/yui-lin.jpg"
+                    alt="Prof. Yu-I (Yui) Lin"
+                    class="professor-photo"
+                >
 
             </div>
 
 
-            <!-- Member 2 -->
-
-            <div class="member-card">
-
-                <img src="images/student1.jpg"
-                     alt="Graduate Student">
+            <div class="professor-info">
 
                 <h3>
-                    XXX XXX
+                    Yu-I (Yui) Lin
                 </h3>
 
-                <p>
-                    Ph.D. Student
-                </p>
+                <div class="title">
+                    Assistant Professor
+                </div>
 
                 <p>
-                    Research interests:<br>
-                    Electrochemical Water Treatment
+                    Department of Environmental Engineering and Science
+                    <br>
+                    Feng Chia University
                 </p>
 
             </div>
-
-
-            <!-- Member 3 -->
-
-            <div class="member-card">
-
-                <img src="images/student2.jpg"
-                     alt="Graduate Student">
-
-                <h3>
-                    XXX XXX
-                </h3>
-
-                <p>
-                    Master's Student
-                </p>
-
-                <p>
-                    Research interests:<br>
-                    Water Resource Management
-                </p>
-
-            </div>
-
 
         </div>
 
     </section>
 
 
-    <!-- Footer -->
+    <!-- ===== Footer ===== -->
 
     <footer>
 
