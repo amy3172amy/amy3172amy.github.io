@@ -105,14 +105,15 @@
         }
 
 
-        .professor-photo {
-            width: 200px;
-            height: 200px;
+       .professor-photo {
+    width: 220px;
+    height: 220px;
 
-            border-radius: 50%;
+    border-radius: 12px;
 
-            object-fit: cover;
-        }
+    object-fit: cover;
+    display: block;
+}
 
 
         .professor-info h3 {
@@ -264,8 +265,15 @@
     text-align: center;
 }
 
+.student-photo-placeholder,
+.student-photo {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
 .student-photo-placeholder {
-    height: 220px;
     background: #E8F3EE;
     display: flex;
     align-items: center;
@@ -589,7 +597,7 @@
 
 <div class="students-section">
 
-    <h2>Graduate Students</h2>
+    <h2> Students</h2>
 
     <div class="students-grid">
 
@@ -605,7 +613,7 @@
                 <h3>Student Name</h3>
 
                 <p class="student-degree">
-                    M.S. Student
+                    B.S. Student
                 </p>
 
                 <p class="student-research">
