@@ -8,7 +8,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Members | We3LL Lab</title>
+    <title>Members | WeLL Lab</title>
 
 
     <style>
@@ -77,7 +77,12 @@
             text-align: center;
             margin-bottom: 50px;
         }
-
+.pi-heading {
+    text-align: center;
+    font-size: 28px;
+    color: #12372A;
+    margin-bottom: 30px;
+}
 
         /* =========================
            PROFESSOR CARD
@@ -285,7 +290,7 @@
     <header>
 
         <h1>
-            Sustainable Water Technology Lab
+            Water & Electrochemical Engineering Laboratory
         </h1>
 
 
@@ -306,14 +311,8 @@
             </a>
 
 
-            <a href="#publications">
-                Publications
-            </a>
-
-
-            <a href="#contact">
-                Contact
-            </a>
+       <a href="index.html#publications">Publications</a>
+            <a href="index.html#contact">Contact</a>
 
         </nav>
 
@@ -337,7 +336,7 @@
         <!-- =========================
              PROFESSOR
         ========================= -->
-
+<h2 class="pi-heading">Principal Investigator</h2>
         <div class="professor-card">
 
 
@@ -365,22 +364,50 @@
                 </div>
 
 
-                <p>
-
-                    Department of Environmental
-                    Engineering and Science
-                    <br>
-
-                    Feng Chia University
-
-                </p>
-
+               <p>
+    Department of Environmental Engineering and Science
+    <br>
+    Feng Chia University
+    <br>
+    Email:
+    <a href="mailto:yuilin@fcu.edu.tw">
+        yuilin@fcu.edu.tw
+    </a>
+                   <div class="academic-links">
+    <a href="#" class="academic-link">CV</a>
+    <a href="#" class="academic-link">Google Scholar</a>
+    <a href="#" class="academic-link">ORCID</a>
+</div>
+</p>
             </div>
 
 
         </div>
 
+/* ===== Academic Links ===== */
 
+.academic-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.academic-link {
+    display: inline-block;
+    padding: 9px 18px;
+    border: 1px solid #12372A;
+    border-radius: 6px;
+    color: #12372A;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.academic-link:hover {
+    background: #12372A;
+    color: white;
+}
 
         <!-- =========================
              RESEARCH INTERESTS
