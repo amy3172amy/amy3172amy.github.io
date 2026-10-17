@@ -236,7 +236,62 @@
             line-height: 1.6;
         }
 
+/* ===== Graduate Students ===== */
 
+.students-section {
+    max-width: 1100px;
+    margin: 80px auto 0;
+}
+
+.students-section h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #12372A;
+    margin-bottom: 35px;
+}
+
+.students-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.student-card {
+    background: #F7FAF8;
+    border: 1px solid #D9E8E1;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.student-photo-placeholder {
+    height: 220px;
+    background: #E8F3EE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #789488;
+}
+
+.student-info {
+    padding: 20px;
+}
+
+.student-info h3 {
+    font-size: 22px;
+    color: #12372A;
+    margin: 0 0 10px;
+}
+
+.student-degree {
+    font-weight: bold;
+}
+
+.student-research {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
         /* =========================
            FOOTER
         ========================= */
@@ -295,6 +350,9 @@
             .interest-grid {
                 grid-template-columns: 1fr;
             }
+            .students-grid {
+    grid-template-columns: 1fr;
+}
 
         }
 
@@ -523,10 +581,46 @@
         </div>
 
 
-    </section>
+ 
 
+<!-- =========================
+     GRADUATE STUDENTS
+========================= -->
 
+<div class="students-section">
 
+    <h2>Graduate Students</h2>
+
+    <div class="students-grid">
+
+        <!-- Student 1 -->
+        <div class="student-card">
+
+            <div class="student-photo-placeholder">
+                <span>Photo</span>
+            </div>
+
+            <div class="student-info">
+
+                <h3>Student Name</h3>
+
+                <p class="student-degree">
+                    M.S. Student
+                </p>
+
+                <p class="student-research">
+                    Research: Electrokinetic Processes
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+        
+   </section>
     <!-- =========================
          FOOTER
     ========================= -->
