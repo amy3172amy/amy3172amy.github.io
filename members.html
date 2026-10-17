@@ -134,7 +134,30 @@
             color: #555;
         }
 
+/* ===== Academic Links ===== */
 
+.academic-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.academic-link {
+    display: inline-block;
+    padding: 9px 18px;
+    border: 1px solid #12372A;
+    border-radius: 6px;
+    color: #12372A;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.academic-link:hover {
+    background: #12372A;
+    color: white;
+}
         /* =========================
            RESEARCH INTERESTS
         ========================= */
@@ -394,30 +417,6 @@
 
         </div>
 
-/* ===== Academic Links ===== */
-
-.academic-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 20px;
-}
-
-.academic-link {
-    display: inline-block;
-    padding: 9px 18px;
-    border: 1px solid #12372A;
-    border-radius: 6px;
-    color: #12372A;
-    text-decoration: none;
-    font-size: 14px;
-    transition: all 0.3s ease;
-}
-
-.academic-link:hover {
-    background: #12372A;
-    color: white;
-}
 
         <!-- =========================
              RESEARCH INTERESTS
@@ -439,10 +438,7 @@
                      RESEARCH 1
                 ====================== -->
 
-                <a
-                    href="index.html#porous-materials"
-                    class="interest-card"
-                >
+              <div class="research-card" id="porous-materials">
 
                     <h3>
                         Porous Charged Materials
@@ -466,10 +462,7 @@
                      RESEARCH 2
                 ====================== -->
 
-                <a
-                    href="index.html#electrokinetic-processes"
-                    class="interest-card"
-                >
+             <div class="research-card" id="electrokinetic-processes">
 
                     <h3>
                         Electrokinetic Processes
@@ -494,10 +487,7 @@
                      RESEARCH 3
                 ====================== -->
 
-                <a
-                    href="index.html#water-management"
-                    class="interest-card"
-                >
+            <div class="research-card" id="water-management">
 
                     <h3>
                         Water Management
