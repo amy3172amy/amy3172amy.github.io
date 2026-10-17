@@ -91,6 +91,32 @@
             line-height: 1.8; 
             color: #555; 
         }
+        /* ===== Research Card Images ===== */
+.research-card {
+    overflow: hidden;
+    padding: 0;
+}
+
+.research-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.research-content {
+    padding: 30px;
+}
+
+.research-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.research-card a:hover h3 {
+    color: #2D8060;
+}
     /* ===== Footer ===== */
         footer {
             background: #12372A;
@@ -167,7 +193,12 @@
     </h2> 
     <div class="research-grid"> 
         <!-- Research 1 --> 
-         <div class="research-card"> 
+       <div class="research-card">
+    <a href="electrokinetic.html">
+        <img src="images/electrokinetic.png"
+             alt="Electrokinetic Processes">
+
+        <div class="research-content">
             <h3> 
                 Electrokinetic Processes 
             </h3> 
@@ -180,6 +211,9 @@
                 materials for ion transport, selective separation, 
                 and electrochemical processes. 
             </p> 
+            </div>
+    </a>
+</div>
         
         <!-- Research 2 --> 
         <div class="research-card"> 
