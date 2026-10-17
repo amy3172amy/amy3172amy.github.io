@@ -8,7 +8,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Members | WeLL Lab</title>
+    <title>Members | WELL Lab</title>
 
 
     <style>
@@ -411,6 +411,27 @@
 
         }
 
+
+        /* ===== Member tabs and professor quick navigation ===== */
+        .member-tabs { display:flex; justify-content:center; gap:12px; max-width:650px; margin:0 auto 45px; }
+        .member-tab { flex:1; padding:15px 22px; border:1px solid #12372A; border-radius:8px; background:#fff; color:#12372A; font-size:17px; font-weight:600; cursor:pointer; }
+        .member-tab.active, .member-tab[aria-selected="true"] { background:#12372A; color:#fff; }
+        .member-panel[hidden] { display:none !important; }
+        .profile-nav { display:flex; flex-wrap:wrap; justify-content:center; gap:10px; max-width:1000px; margin:0 auto 35px; }
+        .profile-nav a { color:#12372A; background:#E8F3EE; border-radius:20px; padding:9px 15px; text-decoration:none; font-size:14px; }
+        .profile-nav a:hover { background:#D3E7DD; }
+        .profile-section { max-width:950px; margin:60px auto 0; scroll-margin-top:25px; }
+        .profile-section h2 { color:#12372A; font-size:28px; padding-bottom:10px; border-bottom:2px solid #D9E8E1; }
+        .placeholder-note { color:#777; font-style:italic; line-height:1.7; }
+        .academic-background { scroll-margin-top:25px; }
+        .academic-background h2 { scroll-margin-top:25px; }
+        @media (max-width:768px) {
+            .member-tabs { gap:8px; }
+            .member-tab { padding:12px 8px; font-size:15px; }
+            .profile-nav { justify-content:flex-start; }
+            .profile-section { margin-top:45px; }
+        }
+
     </style>
 
 </head>
@@ -469,10 +490,25 @@
 
 
 
+        <div class="member-tabs" role="tablist" aria-label="Member categories">
+            <button type="button" class="member-tab active" id="professor-tab" role="tab" aria-selected="true" aria-controls="professor-panel" onclick="showMemberPanel('professor')">Professor</button>
+            <button type="button" class="member-tab" id="students-tab" role="tab" aria-selected="false" aria-controls="students-panel" onclick="showMemberPanel('students')">Students</button>
+        </div>
+
+        <div id="professor-panel" class="member-panel" role="tabpanel" aria-labelledby="professor-tab">
+            <div class="profile-nav" aria-label="Professor profile sections">
+                <a href="#profile">Profile</a>
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#research-interests">Research Interests</a>
+                <a href="#awards">Awards</a>
+                <a href="#patents">Patents</a>
+            </div>
+
         <!-- =========================
              PROFESSOR
         ========================= -->
-<h2 class="pi-heading">Principal Investigator</h2>
+<h2 class="pi-heading" id="profile">Principal Investigator</h2>
         <div class="professor-card">
 
 
@@ -525,7 +561,6 @@
     ORCID
 </a>
 </div>
-</p>
             </div>
 
 
@@ -536,7 +571,7 @@
 
 <div class="academic-background">
 
-    <h2>Education</h2>
+    <h2 id="education">Education</h2>
 
     <div class="cv-item">
         <div class="cv-date">Aug 2020 – Aug 2025</div>
@@ -556,7 +591,7 @@
     </div>
 
 
-    <h2>Professional Experience</h2>
+    <h2 id="experience">Professional Experience</h2>
 
     <div class="cv-item">
         <div class="cv-date">Aug 2026 – Present</div>
@@ -611,7 +646,7 @@
              RESEARCH INTERESTS
         ========================= -->
 
-        <div class="research-interests">
+        <div class="research-interests" id="research-interests">
 
 
             <h2>
@@ -713,6 +748,18 @@
 
  
 
+<div class="profile-section" id="awards">
+    <h2>Honors &amp; Awards</h2>
+    <p class="placeholder-note">Awards and honors will be updated soon.</p>
+</div>
+
+<div class="profile-section" id="patents">
+    <h2>Patents</h2>
+    <p class="placeholder-note">Patent information will be updated soon.</p>
+</div>
+
+        </div><!-- /professor-panel -->
+        <div id="students-panel" class="member-panel" role="tabpanel" aria-labelledby="students-tab" hidden>
 <!-- =========================
      GRADUATE STUDENTS
 ========================= -->
@@ -770,6 +817,7 @@
 
 </div>
         
+        </div><!-- /students-panel -->
    </section>
     <!-- =========================
          FOOTER
@@ -782,6 +830,23 @@
         </p>
 
     </footer>
+
+    <script>
+        function showMemberPanel(which) {
+            const isProfessor = which === 'professor';
+            document.getElementById('professor-panel').hidden = !isProfessor;
+            document.getElementById('students-panel').hidden = isProfessor;
+            for (const name of ['professor', 'students']) {
+                const button = document.getElementById(name + '-tab');
+                const selected = name === which;
+                button.classList.toggle('active', selected);
+                button.setAttribute('aria-selected', String(selected));
+            }
+        }
+        if (window.location.hash === '#students') showMemberPanel('students');
+    </script>
+</body>
+</html>
 
 
 </body>
