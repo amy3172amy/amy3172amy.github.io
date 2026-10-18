@@ -12,30 +12,6 @@
             color: #333;
             background: #ffffff;
         }
-        /* ===== Header Logo ===== */
-
-.header-brand {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    flex-shrink: 0;
-}
-
-.header-logo {
-    display: block;
-    width: 220px;
-    max-width: 100%;
-    height: auto;
-    background: #ffffff;
-    padding: 8px 12px;
-    border-radius: 8px;
-}
-
-@media (max-width: 768px) {
-    .header-logo {
-        width: 180px;
-    }
-}
 /* ===== Header ===== */
         header {
             background: #12372A;
@@ -72,7 +48,6 @@
             max-width: 650px;
             line-height: 1.6;
         }
-       
 /* ===== General Section ===== */
         section {
             padding: 70px 8%;
@@ -175,152 +150,13 @@
     }
 
 }
-       /* ===== About & Research Framework ===== */
-
-.about-section {
-    background: #F5FAF7;
-    padding: 90px 8%;
-}
-
-.about-grid {
-    display: grid;
-    grid-template-columns: 0.9fr 1.1fr;
-    gap: 55px;
-    align-items: center;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.about-content {
-    text-align: left;
-}
-
-.section-label {
-    display: inline-block;
-    color: #2D8060;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-}
-
-.about-content h2 {
-    font-size: 36px;
-    color: #12372A;
-    margin: 0 0 20px;
-}
-
-.about-content h3 {
-    color: #2D8060;
-    font-size: 21px;
-    line-height: 1.4;
-    margin-bottom: 25px;
-}
-
-.about-content p {
-    font-size: 16px;
-    line-height: 1.9;
-    color: #45554D;
-    margin-bottom: 18px;
-}
-
-.about-figure {
-    text-align: center;
-}
-
-.about-figure img {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-width: 720px;
-    margin: 0 auto;
-}
-
-.figure-caption {
-    font-size: 14px;
-    color: #6B7B73;
-    margin-top: 12px;
-}
-
-/* ===== Mobile ===== */
-
-@media (max-width: 768px) {
-
-    .about-section {
-        padding: 55px 6%;
-    }
-
-    .about-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .about-content h2 {
-        font-size: 30px;
-    }
-
-    .about-content h3 {
-        font-size: 19px;
-    }
-
-    .about-figure img {
-        max-width: 100%;
-    }
-
-}
-        /* ===== Header Layout Fix ===== */
-header {
-    gap: 30px;
-}
-
-header nav {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    gap: 12px 22px;
-}
-
-header nav a {
-    margin-left: 0;
-    white-space: nowrap;
-}
-
-.header-logo {
-    width: 200px;
-    box-sizing: border-box;
-}
-
-@media (max-width: 900px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px 5%;
-    }
-
-    header nav {
-        justify-content: center;
-    }
-
-    .header-logo {
-        width: 180px;
-    }
-}
-</style>
-   
+    </style>
 </head>
 
 <body>
 <!-- ===== Header ===== -->
-<!-- ===== Header ===== -->
 <header>
-    <a href="index.html" class="header-brand">
-        <img
-            src="images/logo.png"
-            alt="WELL Lab Logo"
-            class="header-logo"
-        >
-    </a>
+    <h1>WELL LAB</h1>
 
     <nav>
         <a href="#about">About</a>
@@ -333,11 +169,8 @@ header nav a {
 
     <!-- ===== Hero Section ===== -->
 <section class="hero">
-    <h2>Water &amp; Electrochemical Engineering Laboratory</h2>
-
-    <p class="hero-subtitle">
-        Lin's Laboratory · Feng Chia University
-    </p>
+    <h2>Water & Electrochemical Engineering Laboratory</h2>
+    <p class="hero-subtitle">Lin's Laboratory · Feng Chia University</p>
 
     <p>
         We develop innovative electrochemical technologies
@@ -346,63 +179,12 @@ header nav a {
     </p>
 </section>
 
-<!-- ===== About & Research Framework ===== -->
-<section id="about" class="about-section">
-
-  <div class="about-grid">
-
-    <!-- Left: About -->
-    <div class="about-content">
-
-      <span class="section-label">OUR VISION</span>
-
-      <h2>About WELL Lab</h2>
-
-      <h3>Water–Energy–Environment Nexus</h3>
-
-      <p>
-        The Water &amp; Electrochemical Engineering
-        Laboratory (WELL Lab) is dedicated to advancing
-        sustainable water and environmental technologies
-        through interdisciplinary research.
-      </p>
-
-      <p>
-        Guided by the Water–Energy–Environment Nexus,
-        our research integrates innovative materials,
-        electrochemical technologies, and numerical
-        modeling to develop efficient and environmentally
-        sustainable solutions.
-      </p>
-
-      <p>
-        We aim to promote sustainable water management,
-        enhance energy efficiency, and advance resource
-        recovery and circular economy practices.
-        Our work also addresses water quality and emerging
-        environmental challenges, contributing to the
-        long-term sustainability of aquatic ecosystems
-        and the environment.
-      </p>
-
-    </div>
-
-    <!-- Right: Research Framework -->
-    <div class="about-figure">
-
-      <img
-        src="images/research-framework.png"
-        alt="WELL Lab Research Framework"
-      >
-
-      <p class="figure-caption">
-        Research Framework
-      </p>
-
-    </div>
-
-  </div>
-
+<section id="about">
+    <h2>About</h2>
+    <p>
+        Welcome to the WELL LAB. This section introduces our laboratory,
+        research environment, and academic vision.
+    </p>
 </section>
 <!-- ===== Research Section ===== -->
 <section id="research"> 
@@ -445,16 +227,14 @@ header nav a {
                 Numerical Simulation 
             </h3> 
             <p> 
-    Development of multiphysics numerical models to
-    investigate ion transport, fluid dynamics, and
-    electrokinetic phenomena in electrochemical
-    separation systems. By coupling the Nernst–Planck
-    equations, fluid flow, and electrochemical processes,
-    we aim to elucidate underlying transport mechanisms,
-    optimize reactor configurations, and improve
-    separation efficiency and energy performance
-    through computational fluid dynamics (CFD)
-    and numerical simulation. 
+                development of advanced numerical simulation 
+                models to optimize the performance and efficiency 
+                of chemical reactors in green technologies (e.g., 
+                fuel cells, carbon capture systems, or bio-
+                reactors). By leveraging Computational Fluid 
+                Dynamics (CFD) and multiphysics coupling, the
+                project aims to systematically evaluate and refine 
+                critical design parameters. 
               </p> 
            </div>
             </a>
