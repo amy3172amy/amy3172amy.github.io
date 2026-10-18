@@ -12,6 +12,30 @@
             color: #333;
             background: #ffffff;
         }
+        /* ===== Header Logo ===== */
+
+.header-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.header-logo {
+    display: block;
+    width: 220px;
+    max-width: 100%;
+    height: auto;
+    background: #ffffff;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .header-logo {
+        width: 180px;
+    }
+}
 /* ===== Header ===== */
         header {
             background: #12372A;
@@ -264,7 +288,10 @@
 <body>
 <!-- ===== Header ===== -->
 <header>
-    <h1>WELL LAB</h1>
+   <header>
+    <a href="index.html" class="header-brand">
+       <h2>Water &amp; Electrochemical Engineering Laboratory</h2>
+    </a>
 
     <nav>
         <a href="#about">About</a>
