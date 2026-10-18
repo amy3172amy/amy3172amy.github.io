@@ -150,44 +150,99 @@
     }
 
 }
-        /* Research Framework */
-  .framework-section {
-    padding: 70px 20px;
-    background: #ffffff;
-    text-align: center;
-  }
+       /* ===== About & Research Framework ===== */
 
-  .framework-section .container {
-    max-width: 1100px;
+.about-section {
+    background: #F5FAF7;
+    padding: 90px 8%;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 55px;
+    align-items: center;
+    max-width: 1400px;
     margin: 0 auto;
-  }
+}
 
-  .framework-section h2 {
+.about-content {
+    text-align: left;
+}
+
+.section-label {
+    display: inline-block;
+    color: #2D8060;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.about-content h2 {
+    font-size: 36px;
     color: #12372A;
+    margin: 0 0 20px;
+}
+
+.about-content h3 {
+    color: #2D8060;
+    font-size: 21px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #45554D;
     margin-bottom: 18px;
-  }
+}
 
-  .framework-intro {
-    max-width: 780px;
-    margin: 0 auto 32px;
-    line-height: 1.8;
-    color: #53645C;
-  }
+.about-figure {
+    text-align: center;
+}
 
-  .framework-image {
+.about-figure img {
     display: block;
     width: 100%;
-    max-width: 950px;
     height: auto;
+    max-width: 720px;
     margin: 0 auto;
-  }
+}
 
-  @media (max-width: 768px) {
-    .framework-section {
-      padding: 45px 16px;
+.figure-caption {
+    font-size: 14px;
+    color: #6B7B73;
+    margin-top: 12px;
+}
+
+/* ===== Mobile ===== */
+
+@media (max-width: 768px) {
+
+    .about-section {
+        padding: 55px 6%;
     }
-  }
 
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .about-content h2 {
+        font-size: 30px;
+    }
+
+    .about-content h3 {
+        font-size: 19px;
+    }
+
+    .about-figure img {
+        max-width: 100%;
+    }
+
+}
 </style>
    
 </head>
@@ -218,52 +273,64 @@
     </p>
 </section>
 
-<section id="about">
-    <h2>About</h2>
-    <p>
-        Welcome to the WELL LAB. 
-        <p>
-<p>
-  The Water &amp; Electrochemical Engineering Laboratory
-  (WELL Lab) is dedicated to advancing sustainable water
-  and environmental technologies through interdisciplinary
-  research.
-</p>
+<!-- ===== About & Research Framework ===== -->
+<section id="about" class="about-section">
 
-<p>
-  Guided by the <strong>Water–Energy–Environment Nexus</strong>,
-  our research integrates innovative materials, electrochemical
-  technologies, and numerical modeling to develop efficient
-  and environmentally sustainable solutions. We aim to promote
-  sustainable water management, enhance energy efficiency,
-  and advance resource recovery and circular economy practices.
-  Our work also addresses water quality and emerging
-  environmental challenges, contributing to the long-term
-  sustainability of aquatic ecosystems and the environment.
-</p>
-    </p>
-</section>
+  <div class="about-grid">
 
-    <section id="research-framework" class="framework-section">
-  <div class="container">
-    <h2>Research Framework</h2>
+    <!-- Left: About -->
+    <div class="about-content">
 
-    <p class="framework-intro">
-      Our research integrates electrokinetic processes,
-      numerical simulation, and water management to address
-      challenges across the Water–Energy–Environment Nexus.
-    </p>
+      <span class="section-label">OUR VISION</span>
 
-    <img
-      src="images/research-framework.png"
-      alt="WELL Lab Research Framework: Electrokinetic Processes,
-           Numerical Simulation and Mechanistic Study,
-           and Water Management"
-      class="framework-image"
-    >
+      <h2>About WELL Lab</h2>
+
+      <h3>Water–Energy–Environment Nexus</h3>
+
+      <p>
+        The Water &amp; Electrochemical Engineering
+        Laboratory (WELL Lab) is dedicated to advancing
+        sustainable water and environmental technologies
+        through interdisciplinary research.
+      </p>
+
+      <p>
+        Guided by the Water–Energy–Environment Nexus,
+        our research integrates innovative materials,
+        electrochemical technologies, and numerical
+        modeling to develop efficient and environmentally
+        sustainable solutions.
+      </p>
+
+      <p>
+        We aim to promote sustainable water management,
+        enhance energy efficiency, and advance resource
+        recovery and circular economy practices.
+        Our work also addresses water quality and emerging
+        environmental challenges, contributing to the
+        long-term sustainability of aquatic ecosystems
+        and the environment.
+      </p>
+
+    </div>
+
+    <!-- Right: Research Framework -->
+    <div class="about-figure">
+
+      <img
+        src="images/research-framework.png"
+        alt="WELL Lab Research Framework"
+      >
+
+      <p class="figure-caption">
+        Research Framework
+      </p>
+
+    </div>
+
   </div>
+
 </section>
-    
 <!-- ===== Research Section ===== -->
 <section id="research"> 
     <h2> 
