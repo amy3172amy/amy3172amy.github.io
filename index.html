@@ -268,16 +268,58 @@
     }
 
 }
+        /* ===== Header Layout Fix ===== */
+header {
+    gap: 30px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 12px 22px;
+}
+
+header nav a {
+    margin-left: 0;
+    white-space: nowrap;
+}
+
+.header-logo {
+    width: 200px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 5%;
+    }
+
+    header nav {
+        justify-content: center;
+    }
+
+    .header-logo {
+        width: 180px;
+    }
+}
 </style>
    
 </head>
 
 <body>
 <!-- ===== Header ===== -->
+<!-- ===== Header ===== -->
 <header>
-   <header>
     <a href="index.html" class="header-brand">
-       <h2>Water &amp; Electrochemical Engineering Laboratory</h2>
+        <img
+            src="images/logo.png"
+            alt="WELL Lab Logo"
+            class="header-logo"
+        >
     </a>
 
     <nav>
@@ -291,12 +333,7 @@
 
     <!-- ===== Hero Section ===== -->
 <section class="hero">
-
-    <img
-        src="images/logo.png"
-        alt="WELL Lab Logo"
-        class="hero-logo"
-    >
+    <h2>Water &amp; Electrochemical Engineering Laboratory</h2>
 
     <p class="hero-subtitle">
         Lin's Laboratory · Feng Chia University
